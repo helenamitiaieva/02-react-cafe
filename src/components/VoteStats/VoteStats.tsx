@@ -1,4 +1,4 @@
-import styles from './VoteStatus.module.css';
+import styles from './VoteStats.module.css';
 import type { Votes } from '../../types/votes';
 
 interface VoteStatsProps {
@@ -7,7 +7,7 @@ interface VoteStatsProps {
     positiveRate: number
 };
 
-export const VoteStatus = ({votes, totalVotes, positiveRate}:VoteStatsProps) => {
+export const VoteStats = ({votes, totalVotes, positiveRate}:VoteStatsProps) => {
   return (
 <div className={styles.container}>
   <p className={styles.stat}>Good: <strong>{votes.good}</strong></p>
