@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import type { VoteType, Votes  } from './types/votes';
+import type { VoteType, Votes  } from '../../types/votes';
 import './App.css'
 import css  from "./App.module.css";
-import CafeInfo from './components/CafeInfo/CafeInfo';
-import VoteOptions from './components/VoteOptions/VoteOptions';
-import { VoteStatus } from './components/VoteStatus/VoteStatus';
-import { Notification }  from './components/Notification/Notification';
+import CafeInfo from '../CafeInfo/CafeInfo';
+import VoteOptions from '../VoteOptions/VoteOptions';
+import { VoteStatus } from '../VoteStatus/VoteStatus';
+import { Notification }  from '../Notification/Notification';
 
 const initialVotes: Votes = {good: 0, neutral: 0, bad: 0};
 
